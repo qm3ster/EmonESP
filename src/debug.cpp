@@ -17,9 +17,9 @@ StreamSpy SerialEmonTx(EMONTX_PORT);
 
 void debug_setup()
 {
-  DEBUG_PORT.begin(115200);
+  DEBUG_PORT.begin(9600);
   SerialDebug.begin(DEBUG_LOG_BUFFER);
 
-  EMONTX_PORT.begin(115200);
+  EMONTX_PORT.begin(9600);
   SerialEmonTx.begin(DEBUG_LOG_BUFFER);
 }

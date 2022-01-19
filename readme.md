@@ -159,7 +159,7 @@ Data can be inputed to EmonESP via serial UART or HTTP API.
 
 #### UART Input
 
-Data in serial:pairs string format can be inputed to EmonESP via serial UART **(115200 baud)** e.g:
+Data in serial:pairs string format can be inputed to EmonESP via serial UART **(9600 baud)** e.g:
 
 `ct1:3935,ct2:325,t1:12.5,t2:16.9,t3:11.2,t4:34.7`
 
@@ -203,7 +203,7 @@ Navigate to the Releases section of the github page and get the firmware.bin and
 
 `esptool.py write_flash 0x0 ./firmware.bin`
 
-If you're having issues uploading try a slower baudrate, `--baud 115200` is a failsafe option.
+If you're having issues uploading try a slower baudrate, `--baud 9600` is a failsafe option.
 
 ### Option 1: Compile Using PlatformIO
 
